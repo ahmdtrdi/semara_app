@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "666300135228",
+    "project_id": "gemastik-softdev",
+    "storage_bucket": "gemastik-softdev.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:666300135228:android:9fd75d03c0f6e2e5785039",
+        "android_client_info": {
+          "package_name": "semara.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQwXVdXU7VlslJbfK8jk580SAa6VPAZok"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
