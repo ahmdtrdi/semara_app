@@ -33,6 +33,10 @@ TextStyle bodyText20 = GoogleFonts.raleway(
   fontSize: 20,
 );
 
+TextStyle bodyText18 = GoogleFonts.raleway(
+  fontSize: 18,
+);
+
 TextStyle bodyText17 = GoogleFonts.raleway(
   fontSize: 17,
 );
@@ -57,6 +61,10 @@ TextStyle bodyText10 = GoogleFonts.raleway(
   fontSize: 10,
 );
 
+//** POPPINS HEADINGS */
+TextStyle mobileh1p = GoogleFonts.poppins(
+    fontSize: 70, fontWeight: FontWeight.w700, color: turbo950);
+
 //color style
 
 // ** Neutral COLOR
@@ -69,4 +77,5 @@ const Color turbo100 = Color(0XFFFBFFC1);
 const Color turbo300 = Color(0XFFFFF394);
 const Color turbo600 = Color(0XFFCFAA00);
 const Color turbo800 = Color(0XFF885F0B);
+const Color turbo900 = Color(0XFF744E0F);
 const Color turbo950 = Color(0XFF442904);

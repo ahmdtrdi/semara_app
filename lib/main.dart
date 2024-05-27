@@ -5,7 +5,7 @@ import 'package:semara_app/firebase_options.dart';
 import 'package:semara_app/routes/app_routes.dart';
 
 void main() async {
-  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform)
+  /*await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);*/
   runApp(const SemaraApp());
 }
 

@@ -2,7 +2,7 @@
     <application
         android:label="semara_app"
         android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/launcer_icons">
         <activity
             android:name=".MainActivity"
             android:exported="true"

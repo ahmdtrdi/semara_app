@@ -9,7 +9,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:666300135228:android:9fd75d03c0f6e2e5785039",
         "android_client_info": {
-          "package_name": "semara.app"
+          "package_name": "com.example.semara_app"
         }
       },
       "oauth_client": [],
