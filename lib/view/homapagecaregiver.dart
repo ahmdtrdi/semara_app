@@ -57,7 +57,7 @@ class _HomepageCaregiverState extends State<HomepageCaregiver> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: turbo300,
-      body: SafeArea(
+      body: SingleChildScrollView(
           child: Padding(
         padding: const EdgeInsets.all(30.0),
         child: Column(
@@ -84,11 +84,92 @@ class _HomepageCaregiverState extends State<HomepageCaregiver> {
               height: 31,
             ),
             Container(
-              padding:
-                  const EdgeInsets.only(left: 16.0, right: 16.0, top: 20.0),
+              padding: const EdgeInsets.only(
+                left: 16.0,
+                right: 16.0,
+              ),
               color: Colors.white,
               child: _buildSemaraServiceMenu(),
-            )
+            ),
+            const SizedBox(
+              height: 36,
+            ),
+            SizedBox(
+              width: 350,
+              height: 118,
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(20),
+                child: Container(
+                  color: Colors.white,
+                  child: Row(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(15.0),
+                        child: Column(
+                          children: [
+                            Text(
+                              "SEMARA (Senja Emas Rahayu)",
+                              style: bodyText14.copyWith(
+                                  fontWeight: FontWeight.w800, color: turbo950),
+                            ),
+                            const SizedBox(
+                              height: 11,
+                            ),
+                            Text(
+                              "Aplikasi pendamping untuk meningkatkan\n kualitas hidup para lansia secara\n menyeluruh dengan semangat kepedulian\n dan kemanusiaan.",
+                              style: bodyText10.copyWith(color: turbo950),
+                            )
+                          ],
+                        ),
+                      ),
+                      Image.asset(
+                        "assets/icons/demensia.png",
+                        width: 105,
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            const SizedBox(
+              height: 21,
+            ),
+            SizedBox(
+              width: 350,
+              height: 118,
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(20),
+                child: Container(
+                  color: Colors.white,
+                  child: Row(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(10.0),
+                        child: Column(
+                          children: [
+                            Text(
+                              "Panggil Bantuan Darurat\ndengan Sekali Sentuh",
+                              style: bodyText14.copyWith(
+                                  fontWeight: FontWeight.w800,
+                                  color: Colors.black),
+                            ),
+                            Text(
+                              "Kemudahan dan kecepatan untuk\nmeminta bantuan darurat kepada orang\n terdekat dengan cepat hanya dengan\nsekali sentuhan.",
+                              style: bodyText10.copyWith(color: turbo950),
+                            )
+                          ],
+                        ),
+                      ),
+                      Image.asset(
+                        "assets/icons/emergency-call.png",
+                        width: 105,
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            // --- ** BottomAppBar ** -- //
           ],
         ),
       )),

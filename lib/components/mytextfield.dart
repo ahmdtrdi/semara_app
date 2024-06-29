@@ -5,11 +5,13 @@ class MyTextFiled extends StatelessWidget {
   final controller;
   final String hintText;
   final bool obscureText;
+  final Function(String)? onChanged;
   const MyTextFiled(
       {super.key,
       required this.controller,
       required this.hintText,
-      required this.obscureText});
+      required this.obscureText,
+      this.onChanged});
 
   @override
   Widget build(BuildContext context) {
@@ -18,6 +20,7 @@ class MyTextFiled extends StatelessWidget {
       child: TextField(
         controller: controller,
         obscureText: obscureText,
+        onChanged: onChanged,
         decoration: InputDecoration(
             enabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(10.0),
